@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+      margin: auto;
+      padding: 0; 
+      text-align: center;
+      display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+      
+
+        }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 60px;
+        width: 90%;
+    }
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+    @media (min-width: 601px) and (max-width: 899px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    </style>
+</head>
+
+<body>
+    <h2>Dog Gallery</h2>
+
+    <div class="container">
+        
+        <div class="dog"> <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" alt="dog 1"></div>
+        <div class="dog"> <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Golden_Doodle_Standing_%28HD%29.jpg" alt="dog 2"></div>
+        <div class="dog"> <img src="https://media.istockphoto.com/id/1503385646/photo/portrait-funny-and-happy-shiba-inu-puppy-dog-peeking-out-from-behind-a-blue-banner-isolated.jpg?s=612x612&w=0&k=20&c=xZq8PhunL9ZmY243et3GOf04wJPBmHzeiQ3jw7nWCrY=" alt="dog 3"></div>
+        <div class="dog"><img src="https://hips.hearstapps.com/hmg-prod/images/black-dog-breeds-black-labrador-retriever-1566497968.jpg?crop=0.668xw:1.00xh;0.133xw,0&resize=1200:*" alt="dog 4"></div>
+        <div class="dog"> <img src="https://media.istockphoto.com/id/646108884/photo/portrait-of-brown-cute-labrador-retriever-puppy-with-sunset-bokeh-abstract.jpg?s=612x612&w=0&k=20&c=FIY6gQ4VSdp5FS74LBhjxqC2XDUdwBPET3G_9IdIo90=" alt="dog 5"></div>
+        <div class="dog"><img src="https://static.vecteezy.com/system/resources/thumbnails/051/226/640/small_2x/happy-dog-with-raised-paw-looking-at-camera-isolated-on-transparent-background-cute-pet-portrait-for-animal-themed-designs-and-advertising-png.png" alt="dog 6"></div>
+        <div class="dog"> <img src="https://media.istockphoto.com/id/505534037/photo/golden-retriever-dog.jpg?s=612x612&w=0&k=20&c=vvM18wL7Wcu_Jk-qCslhuZtVYewalkWiAiLiTmip5dE=" alt="dog 7"></div>
+        <div class="dog"> <img src="https://pethelpful.com/.image/w_3840,q_auto:good,c_limit/NDowMDAwMDAwMDAwMDk3NjEy/french-bulldog-running.jpg" alt="dog 8"></div>
+        <div class="dog"> <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Labrador_Retriever_portrait.jpg" alt="dog 9"></div>
+        </div>
+</body>
+</html>
